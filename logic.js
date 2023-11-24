@@ -3,11 +3,11 @@ let button=document.querySelectorAll("button");
 
 let string=" ";
 button.forEach(element=>{
-    element.addEventListener("touchstart",(e)=>{
+    element.addEventListener("click",(e)=>{
         // console.log(" button was clicked");
         if(e.target.innerText=='='){
             string=String(eval(string));
-            input.value=string;
+            input.value=string;g
         }
         else if(e.target.innerText=="AC"){
 string="";
